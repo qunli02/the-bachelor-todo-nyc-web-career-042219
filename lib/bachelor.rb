@@ -60,6 +60,7 @@ def get_occupation(data, hometown)
         end
         if desc == "occupation" && i == true
           job = stuff
+          break
         end
       end
     end
