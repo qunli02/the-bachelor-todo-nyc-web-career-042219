@@ -41,11 +41,11 @@ def count_contestants_by_hometown(data, hometown)
       x.each do |desc, stuff|
         if desc == "hometown" && stuff == hometown
           amount += 1
+          return amount
         end
       end
     end
   end
-  return amount
 end
 
 def get_occupation(data, hometown)
@@ -65,7 +65,6 @@ def get_occupation(data, hometown)
       end
     end
   end
-  return job
 end
 
 def get_average_age_for_season(data, season)
