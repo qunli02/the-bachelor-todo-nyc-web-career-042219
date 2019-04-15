@@ -62,6 +62,7 @@ def get_occupation(data, hometown)
         if desc == "occupation" && i == true
           job = stuff
         end
+        binding.pry
       end
     end
   end
