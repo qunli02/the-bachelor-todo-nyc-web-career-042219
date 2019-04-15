@@ -29,6 +29,7 @@ def get_contestant_name(data, occupation)
       end
     end
   end
+  person = "sdsds"
   return person
 end
 
