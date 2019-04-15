@@ -24,11 +24,10 @@ def get_contestant_name(data, occupation)
         name = stuff
       end
       if desc == "occupation" && stuff == occupation
-        person = name
+        return name
       end
     end
   end
-  return person
 end
 
 def count_contestants_by_hometown(data, hometown)
