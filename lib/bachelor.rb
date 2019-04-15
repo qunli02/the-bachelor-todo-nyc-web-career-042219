@@ -17,14 +17,14 @@ end
 def get_contestant_name(data, occupation)
   # code here
   name = nil
-  person = []
+  person = nil
   data.each do |season, info|
     info.each do |desc, stuff|
       if desc == "name" 
         name = stuff
       end
       if desc == "occupation" && stuff == occupation
-        person << name
+        person = name
       end
     end
   end
