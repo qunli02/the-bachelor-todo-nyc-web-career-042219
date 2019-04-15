@@ -21,15 +21,15 @@ def get_contestant_name(data, occupation)
     info.each do |x|
       x.each do |desc, stuff|
         if desc == "name"
-          person = stuff
+          name = stuff
         end
-        if desc == 
-          
+        if desc == "occupation" && stuff == occupation
+          person = name
         end
       end
     end
   end
-  
+  return person
 end
 
 def count_contestants_by_hometown(data, hometown)
