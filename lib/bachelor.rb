@@ -50,7 +50,21 @@ end
 
 def get_occupation(data, hometown)
   # code here
-  
+  job = nil
+    data.each do |season, info|
+    info.each do |x|
+      x.each do |desc, stuff|
+        i = false
+        if desc == "hometown" && stuff == hometown
+          i = true
+        end
+        if i == true && desc == 
+          
+        end
+      end
+    end
+  end
+  return amount
 end
 
 def get_average_age_for_season(data, season)
