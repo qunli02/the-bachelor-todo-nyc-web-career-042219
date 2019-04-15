@@ -23,7 +23,7 @@ def get_contestant_name(data, occupation)
         name = stuff
       end
       if desc == "occupation" && stuff == occupation
-        return name
+        print name
       end
     end
   end
