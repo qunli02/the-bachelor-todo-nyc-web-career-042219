@@ -51,6 +51,7 @@ end
 def get_occupation(data, hometown)
   # code here
   job = nil
+  i = false
     data.each do |season, info|
     info.each do |x|
       x.each do |desc, stuff|
