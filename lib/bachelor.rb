@@ -52,14 +52,14 @@ def get_occupation(data, hometown)
   # code here
   job = nil
   i = false
-    data.each do |season, info|
+  data.each do |season, info|
     info.each do |x|
       x.each do |desc, stuff|
         i = false
         if desc == "hometown" && stuff == hometown
           i = true
         end
-        if i == true && desc == "occupation"
+        if desc == "occupation" && i == true
           job = stuff
         end
       end
