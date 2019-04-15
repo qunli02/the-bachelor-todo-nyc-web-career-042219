@@ -22,8 +22,9 @@ def get_contestant_name(data, occupation)
     info.each do |desc, stuff|
       if desc == "name" 
         name = stuff
-      elsif desc == "o"
-        
+      end
+      if desc == "occupation" && stuff == occupation
+        person << name
       end
     end
   end
