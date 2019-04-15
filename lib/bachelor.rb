@@ -17,7 +17,6 @@ end
 def get_contestant_name(data, occupation)
   # code here
   name = nil
-  person = nil
   data.each do |season, info|
     info.each do |desc, stuff|
       if desc == "name" 
