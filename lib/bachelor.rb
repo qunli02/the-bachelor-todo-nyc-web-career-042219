@@ -58,13 +58,13 @@ def get_occupation(data, hometown)
         if desc == "hometown" && stuff == hometown
           i = true
         end
-        if i == true && desc == 
-          
+        if i == true && desc == "occupation"
+          job = stuff
         end
       end
     end
   end
-  return amount
+  return job
 end
 
 def get_average_age_for_season(data, season)
