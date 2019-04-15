@@ -39,7 +39,7 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |season, info|
     info.each do |x|
       x.each do |desc, stuff|
-        if desc == "hometown"
+        if desc == "hometown" && stuff == hometown
           amount += 1
         end
       end
