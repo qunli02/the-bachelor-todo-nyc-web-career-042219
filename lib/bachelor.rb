@@ -25,10 +25,10 @@ def get_contestant_name(data, occupation)
       end
       if desc == "occupation" && stuff == occupation
         person = name
+        return person
       end
     end
   end
-  return person
 end
 
 def count_contestants_by_hometown(data, hometown)
