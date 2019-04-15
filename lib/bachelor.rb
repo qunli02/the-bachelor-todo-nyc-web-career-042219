@@ -55,7 +55,6 @@ def get_occupation(data, hometown)
   data.each do |season, info|
     info.each do |x|
       x.each do |desc, stuff|
-        i = false
         if desc == "hometown" && stuff == hometown
           i = true
         end
